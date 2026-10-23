@@ -1,0 +1,10 @@
+import React from 'react';
+import {hydrateRoot} from 'react-dom/client';
+import {routes} from './routes';
+import '../source/app/globals.css';
+const base=import.meta.env.BASE_URL;
+let path=window.location.pathname;
+if(base!=='/' && path.startsWith(base))path='/'+path.slice(base.length);
+path=path.replace(/\/index\.html$/,'/').replace(/\/$/,'')||'/';
+const Page=routes[path]||routes['/'];
+hydrateRoot(document.getElementById('root')!,<Page/>);

@@ -1,0 +1,13 @@
+{
+  "source_snapshot": "126 tracked files matched byte-for-byte",
+  "live_project_unchanged": true,
+  "root_build": "passed",
+  "github_subpath_build": "passed, /kurumsal-test/",
+  "five_prerendered_pages": "passed",
+  "local_images_and_gallery": "byte-identical",
+  "browser": "Home appearance, subdirectory navigation, gallery load, filter, lightbox and next/close passed.",
+  "cloudflare_worker": "No-token gallery fallback passed; live Meta access unverified (no token supplied).",
+  "hosting": "Configuration included. Not deployed to GitHub or Cloudflare.",
+  "dependencies": "All browser runtime dependencies bundled in dist. Rebuild dependencies declared and locked. node_modules omitted.",
+  "mobile": "Original responsive CSS and menu logic preserved; no new mobile-device browser test."
+}
